@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #22254b;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.movie {
+  position: relative;
+  width: 220px;
+  background-color: #272b64;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.movie img {
+  max-width: 100%;
+}
+.movie-info {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-info h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.movie-info span {
+  /* background-color: #6a70c5; */
+  /* color: rgb(43, 104, 43); */
+  font-weight: 700;
+  padding: 3px 3px;
+  border-radius: 3px;
+}
+.movie-header {
+  position: relative;
+}
+.tags {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  background-color: aqua;
+}
+.movie-hover {
+  position: absolute;
+  background-color: #fff;
+  color: #272b64;
+  padding: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  max-height: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  transform: translateY(1500%);
+  transition: transform 0.2s ease-in;
+}
+.movie:hover .movie-hover {
+  transform: translateY(0%);
+}
+
+.green {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
+}
+.red {
+  background-color: red;
+}
+header {
+  background-color: #303363;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #22254b;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+header form {
+  width: 80%;
+  justify-content: center;
+}
+header .search {
+  width: 100%;
+  padding: 1.2em;
+  border-radius: 5px;
+  background-color: #3e4279;
+  border: 1px solid #22254b;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* pagination */
+.paginate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.paginate a {
+  background-color: #22254b(235, 210, 210, 0.849);
+  border: 1px solid #3e4279;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+.paginate .active {
+  background-color: rgb(42, 50, 165);
+  border-color: #fff;
+  font-size: 18px;
+}
+.paginate .page {
+  background-color: rgb(66, 137, 219);
+  border: 2px solid #22254b;
+  font-weight: 700;
+  font-size: 1.2em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
