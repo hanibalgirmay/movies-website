@@ -1,9 +1,9 @@
 <h2>Movie website</h2>
-This is Movie website created using <a href="https://react.com" target="_blank">react</div>
+This is Movie website created using [go](https://react.org)){:target="_blank" rel="noopener"}
 
 ## Movie API
 
-API key is needed from themoviedb [http://developers.themoviedb.org](http://developers.themoviedb.org)
+API key is needed from themoviedb [go](http://developers.themoviedb.org){:target="_blank" rel="noopener"}
 
 ## Project Status
 
@@ -23,7 +23,5 @@ To Start Server:
 
 ### `npm start`
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [go](http://localhost:3000){:target="_blank" rel="noopener"} to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
